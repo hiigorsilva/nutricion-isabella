@@ -69,6 +69,22 @@ img {
   -webkit-background-clip: text;
   color: transparent;
 }
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.875rem;
+  max-width: 26rem;
+  width: 100%;
+}
+.tag {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
 .title {
   font-family: "Mochain", serif;
   line-height: 1.3;
@@ -265,22 +281,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.event .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0.5rem;
-  max-width: 26rem;
-  width: 100%;
-}
-.event .top .tag {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem;
-}
 .event .top h2 {
   color: var(--title);
 }
@@ -357,4 +357,149 @@ img {
   font-weight: 400;
   color: var(--green-light);
   opacity: 0.7;
+}
+
+/* CTA */
+.cta-area {
+  background: var(--green-light);
+}
+.cta-area .box {
+  position: relative;
+  background: var(--gradient-accent);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+}
+.cta-area .box::before {
+  content: "";
+  display: block;
+  background: url("../../media/icon/icon-sheet-min.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.875rem;
+  right: 2.5rem;
+  width: 18.5rem;
+  aspect-ratio: 1/1;
+  fill: white;
+  opacity: 0.5;
+}
+.cta-area .box > svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  fill: var(--green-light);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.cta-area .box .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+.cta-area .box .content .leftside,
+.cta-area .box .content .rightside {
+  max-width: 25rem;
+  width: 100%;
+}
+.cta-area .box .content .leftside h2 {
+  font-weight: 400;
+  color: var(--white);
+  max-width: 19rem;
+  margin-left: auto;
+}
+.cta-area .box .content .rightside .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.cta-area .box .content .rightside .form .email {
+  border-color: var(--paragraphy);
+}
+.cta-area .box .content .rightside .form .cta {
+  background: var(--gradient-box);
+}
+.cta-area .box .content .rightside .form .cta span {
+  font-size: 400;
+  color: var(--white);
+}
+.cta-area .box .content .rightside .form .cta svg {
+  fill: var(--white);
+}
+
+/* ABOUT ME */
+.about-me {
+  position: relative;
+  background: var(--green-light);
+  padding-block: 7.5rem;
+  z-index: -1;
+}
+.about-me .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.about-me .content .leftside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-me .content .leftside .top {
+  margin-bottom: 2rem;
+}
+.about-me .content .leftside .text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.about-me .content .leftside .text + .text {
+  margin-top: 1rem;
+}
+.about-me .content .leftside .text > span {
+  display: block;
+  font-weight: 600;
+}
+.about-me .content .rightside {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .content .rightside::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 30rem;
+  aspect-ratio: 1/1;
+  background: var(--white);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: blur(3rem);
+  -webkit-filter: blur(3rem);
+  opacity: 0.5;
+  z-index: -1;
 }
