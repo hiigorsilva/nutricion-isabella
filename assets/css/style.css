@@ -729,11 +729,6 @@ body {
   .hero .headline .promisse p {
     width: 100%;
   }
-  .footer .content .privacy {
-    flex-direction: column;
-  }
-}
-@media (max-width: 400px) {
   .event .content .rightside {
     gap: 2rem;
   }
@@ -743,6 +738,9 @@ body {
   }
   .event .content .rightside .box-day .time {
     gap: 0;
+  }
+  .footer .content .privacy {
+    flex-direction: column;
   }
 }
 @media (max-width: 440px) {
