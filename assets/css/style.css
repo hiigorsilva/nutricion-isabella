@@ -419,6 +419,7 @@ body {
 
 /* CTA */
 .cta-area {
+  position: relative;
   background: var(--green-light);
 }
 .cta-area .box {
@@ -472,7 +473,7 @@ body {
 .cta-area .box .content .leftside h2 {
   font-weight: 400;
   color: var(--white);
-  max-width: 19rem;
+  max-width: 25rem;
   margin-left: auto;
 }
 .cta-area .box .content .rightside .form {
