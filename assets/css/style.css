@@ -688,6 +688,9 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .hero .headline .info-time {
+    justify-content: center;
+  }
   .event .content {
     flex-direction: column;
     justify-content: flex-start;
